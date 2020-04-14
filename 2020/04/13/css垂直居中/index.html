@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>bootstrap | 天行轨迹</title>
+  <title>mi | 天行轨迹</title>
   <meta name="keywords" content>
-  <meta name="description" content="bootstrap | 天行轨迹">
+  <meta name="description" content="mi | 天行轨迹">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="bootstrap">
@@ -296,9 +296,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-css垂直居中" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">bootstrap</h1>
+        <h1 class="article-title">mi</h1>
     
     <div class="article-meta">
         
@@ -308,7 +308,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-03-17 16:59:19'>2020-03-17 13:39</time>
+        创建时间:<time class="date" title='更新时间: 2020-04-13 16:21:27'>2020-04-13 13:17</time>
         
     </div>
     <div class="article-meta">
@@ -341,7 +341,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#css居中问题"><span class="toc-text">css居中问题</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -357,7 +357,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="css居中问题"><a href="#css居中问题" class="headerlink" title="css居中问题"></a>css居中问题</h2><p>1：水平居中 margin 0 auto<br>2：垂直居中</p>
+<blockquote>
+<p>（1）display：inline-block<br>vertical-align:middle<br>（2）通过display:flex实现CSS垂直居中的方法是<br>   给父元素display:flex;而子元素align-self:center;<br>（3）给父元素display:table，子元素display：table-cell vertical-align:middle的方式实现CSS垂直居中<br>（4）给子元素的position:relative，再通过translateY即可定位到垂直居中的位置。</p>
+<ul>
+<li>transform 用来设置元素的变形效果<pre><code>- 平移：
+    translateX() 沿着x轴方向平移
+    translateY() 沿着y轴方向平移
+    translateZ() 沿着z轴方向平移
+        - 平移元素，百分比是相对于自身计算的</code></pre>   ( 5 )绝对定位：position:top50%,height:240px,margin-top:-120px</li>
+</ul>
+</blockquote>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论 </span>
     </div>
@@ -368,6 +379,18 @@
     <a  class="dashang" onclick="dashangToggle()">赏</a>
 </p>
 
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>mi</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="天行">天行</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-04-13, 13:17:09</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-13, 16:21:27</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/13/css垂直居中/" title="mi">http://yoursite.com/2020/04/13/css垂直居中/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
 
 
 
