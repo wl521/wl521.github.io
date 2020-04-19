@@ -2,9 +2,9 @@
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
-  <title>Hello World(在vscode中实现vue项目helloworld) | 天行轨迹</title>
+  <title>ajax | 天行轨迹</title>
   <meta name="keywords" content>
-  <meta name="description" content="Hello World(在vscode中实现vue项目helloworld) | 天行轨迹">
+  <meta name="description" content="ajax | 天行轨迹">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="bootstrap">
@@ -304,9 +304,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-ajax(jquer.ajax+axios)" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World(在vscode中实现vue项目helloworld)</h1>
+        <h1 class="article-title">ajax</h1>
     
     <div class="article-meta">
         
@@ -316,7 +316,7 @@
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-04-05 18:01:01'>2019-08-29 22:56</time>
+        创建时间:<time class="date" title='更新时间: 2020-04-19 19:36:38'>2020-04-19 19:31</time>
         
     </div>
     <div class="article-meta">
@@ -349,7 +349,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#环境配置"><span class="toc-text">环境配置</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ajax"><span class="toc-text">Ajax</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -365,13 +365,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h2><p>下载vscode</p>
+        <h2 id="Ajax"><a href="#Ajax" class="headerlink" title="Ajax"></a>Ajax</h2><p>Ajax 不是一种新的编程语言，而是一种用于创建更好更快以及交互性更强的Web应用程序的技术。<br>利用AJAX可以做：<br>注册时，输入用户名自动检测用户是否已经存在。<br>登陆时，提示用户名密码错误<br>删除数据行时，将行ID发送到后台，后台在数据库中删除，数据库删除成功后，在页面DOM中将数据行也删除。<br>Jquery.ajax<br>Ajax的核心是XMLHttpRequest对象(XHR)。XHR为向服务器发送请求和解析服务器响应提供了接口。能够以异步方式从服务器获取新数据。<br>jQuery 提供多个与 AJAX 有关的方法。<br>通过 jQuery AJAX 方法，您能够使用 HTTP Get 和 HTTP Post 从远程服务器上请求文本、HTML、XML 或 JSON – 同时您能够把这些外部数据直接载入网页的被选元素中。<br>jQuery 不是生产者，而是大自然搬运工。<br>jQuery Ajax本质就是 XMLHttpRequest，对他进行了封装，方便调用！<br>jQuery.ajax(…)<br>      部分参数：<br>1:jquery.get<br>Url:带载入的页面URL地址<br>Date：待发送的key/value参数<br>Successs：载入成功的回调函数<br>dateType：发挥内容格式<br>参数：<br>            url：请求地址<br>            type：请求方式，GET、POST（1.9.0之后用method）<br>        headers：请求头<br>            data：要发送的数据<br>    contentType：即将发送信息至服务器的内容编码类型(默认: “application/x-www-form-urlencoded; charset=UTF-8”)<br>          async：是否异步<br>        timeout：设置请求超时时间（毫秒）<br>      beforeSend：发送请求前执行的函数(全局)<br>        complete：完成之后执行的回调函数(全局)<br>        success：成功之后执行的回调函数(全局)<br>          error：失败之后执行的回调函数(全局)<br>        accepts：通过请求头发送给服务器，告诉服务器当前客户端可接受的数据类型<br>        dataType：将服务器端返回的数据转换成指定类型<br>          “xml”: 将服务器端返回的内容转换成xml格式<br>          “text”: 将服务器端返回的内容转换成普通文本格式<br>          “html”: 将服务器端返回的内容转换成普通文本格式，在插入DOM中时，如果包含JavaScript标签，则会尝试去执行。<br>        “script”: 尝试将返回值当作JavaScript去执行，然后再将服务器端返回的内容转换成普通文本格式<br>          “json”: 将服务器端返回的内容转换成相应的JavaScript对象<br>        “jsonp”: JSONP 格式使用 JSONP 形式调用函数时，如 “myurl?callback=?” jQuery 将自动替换 ? 为正确的函数名，以执行回调函数<br>Axios：<br>最流行ajax请求库<br>1:基本promise的异步ajax请求库<br>2：浏览器端<br>3：支持请求/响应拦截器<br>4：支持请求取消<br>5：请求/响应转换<br>6：批量多个请求<br>异步请求技术<br>请求页面不刷新，响应后涮新页面局部，多个请求之间互不影响<br>1：下载：<br>    1：Vscode打开终端直接下载 npm install axios<br>    2：<script src="https://unpkg.com/axios/dist/axios.min.js"></script>（建议使用）<br>2：请求<br>   1：get</p>
 <blockquote>
-</blockquote>
-<p>配置</p>
+<p>Axios.get（‘地址’? 参数&amp;参数）//发送请求的url<br>.then(funtion(response){<br>Console.log(response.data)<br>})//响应回来触发的回调函数<br>.catch(function(err){<br>})<br>2：post<br>Axios.get（‘地址’{对象}{}）//发送请求的url<br>.then(funtion(response){<br>Console.log(response.data)<br>})//响应回来触发的回调函数<br>           .catch(function(err){<br>}<br>传参两种方式<br>使用字符串：”name=11111“<br>在后端使用@requestbody注释形式接受（json字符串封装成对象）<br> 3：并发<br>   发送多个请求到后端，响应不同结果<br>Funtion find(){</p>
 <blockquote>
+<p>}<br>Funtion sent(){<br>Return axios.post()<br>}<br>Axios.all([find()],[sent()]).then(<br>axios.spread(){<br>Funtion(){}<br>})</p>
 </blockquote>
-<p>加入cdn</p>
+</blockquote>
+<p>4：API<br>5：axios配置方式发送请求</p>
+<blockquote>
+<p>Var instance=axios.create({<br>Method:”get”<br>baseURL:””<br>Data:{}<br>})<br>Instance.get()</p>
+</blockquote>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论 </span>
@@ -385,12 +389,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Hello World(在vscode中实现vue项目helloworld)</p>
+    <p><span class="copy-title">文章标题:</span>ajax</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="天行">天行</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-08-29, 22:56:06</p>
-    <p><span class="copy-title">最后更新:</span>2020-04-05, 18:01:01</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/29/hello-world/" title="Hello World(在vscode中实现vue项目helloworld)">http://yoursite.com/2019/08/29/hello-world/</a>
+    <p><span class="copy-title">发布时间:</span>2020-04-19, 19:31:57</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-19, 19:36:38</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/04/19/ajax(jquer.ajax+axios)/" title="ajax">http://yoursite.com/2020/04/19/ajax(jquer.ajax+axios)/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
